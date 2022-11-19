@@ -12,6 +12,7 @@ body {
 
 .App{
   width: 100%;
+  padding: 0 80px;
 }
 
 .container {
@@ -62,16 +63,13 @@ body {
   margin: 5px;
   padding: 10px 20px;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .task.reminder {
   border-left: 5px solid green;
-}
-
-.task h3 {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
 }
 
 .add-form {

@@ -1,3 +1,4 @@
-export default function Button({label}){
-	return (<button className="btn">{label}</button>)
+export default function Button({label, onClick}){
+
+	return (<button className="btn" onClick={onClick}>{label}</button>)
 }

@@ -1,16 +1,18 @@
 import PropTypes from 'prop-types'
-import Button from './button'
+import Button from './Button'
+import AddForm from './AddForm'
 
-export default function Header(props){
+export default function Header({title, onAdd}){
 	return (
 		<div className="header">
-			<div className="left"></div>
+			<div className="left">
+				<h1>{title}</h1>
+			</div>
 			<div className="center">
 				<div className="task-title">
-					<h1>Header: {props.title}</h1>
+					<AddForm onAdd={onAdd}/>
 				</div>
 				<div className="task-button">
-					<Button label="Add"/>
 				</div>
 			</div>
 			<div className="right"></div>
@@ -24,5 +26,6 @@ Header.defaultProps = {
 }
 
 Header.propTypes = {
-	title: PropTypes.string.isRequired
+	title: PropTypes.string.isRequired,
+	onAdd: PropTypes.func.isRequired
 }
