@@ -2,6 +2,9 @@ body{
 	font-family: 'Eurostile Extended', sans-serif;
 	color: #141c3a;	
 }
+.hidden{
+	visibility:hidden;
+}
 ul {
 	list-style: none;
     padding-left: 0;
@@ -143,6 +146,8 @@ ul {
 }
 .skills{
 	width: 90%;
+	min-width: 700px;
+	max-width: 2800px;
 	height: 500px;
 	display: flex;
 	justify-content: center;
@@ -205,7 +210,13 @@ ul {
 	text-align: center;
 	font-weight: bolder;
 }
-.companies-container{
+.companies-container {
+	display: flex;
+	justify-content: center;
+}
+.companies-grid{
+	width: 100%;
+	max-width: 2800px;
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
 	gap: 10px;
@@ -272,7 +283,8 @@ ul {
 	justify-content: center;
 }
 .footer-banner {
-	width: 90%;
+	width: 1100px;
+	max-width: 1500px;
 	height: 150px;
 	background-color: #141C3A;
 	color: white;
@@ -286,17 +298,17 @@ ul {
 .footer-banner > div{
 	text-align: center;
 }
-.left{
-	width: 300px;
+.left-banner{
+	width: 250px;
 }
-.center {
+.center-banner {
 	width: 500px;
 	font-size: 20px;
 }
-.right {
-	width: 300px;
+.right-banner {
+	width: 250px;
 }
-.right > button {
+.right-banner > button {
 	width: 170px;
 	height: 60px;
 	font-size: 22px;
@@ -308,7 +320,7 @@ ul {
 	transition: 0.2s;
 }
 
-.right > button:hover {
+.right-banner > button:hover {
 	background-color: #5CE9B9;
 	color: #141C3A;
 }
@@ -342,6 +354,13 @@ ul {
 .footer-icons>i:hover{
 	color: #6D07F2;
 	background-color: white;
+}
+.footer-disclaimer{
+	margin-top: 20px;
+	color: white;
+	text-align: center;
+	font-size: 16px;
+	font-style: italic;
 }
 
 
