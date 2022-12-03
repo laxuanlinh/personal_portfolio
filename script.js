@@ -42,6 +42,37 @@ async function typewriter()
 
 typewriter()
 
+function showMenu(){
+    let container = document.getElementById("menu-items-container")
+    if(container.style.display == "flex"){
+        container.style.display = "none"
+    } else {
+        container.style.display = "flex"
+    }
+}
+
+function switchMenu(){
+    const menuNormal = document.getElementById("menu-normal")
+    const menuMobile = document.getElementById("menu-mobile")
+    const companies = document.getElementById("companies-grid")
+    let width = window.outerWidth
+    if(width < 1000){
+        menuNormal.style.display = "none"
+        menuMobile.style.display = "flex"
+        companies.style.gridTemplateColumns="repeat(1 ,1fr)"
+    } else {
+        menuNormal.style.display = "flex"
+        menuMobile.style.display = "none"
+        companies.style.gridTemplateColumns="repeat(4 ,1fr)"
+    }
+}
+
+switchMenu()
+
+
+addEventListener("resize", (event) => {
+    switchMenu()
+});
 
 
 
