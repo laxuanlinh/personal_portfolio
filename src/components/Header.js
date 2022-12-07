@@ -1,31 +1,32 @@
-import PropTypes from 'prop-types'
-import Button from './Button'
-import AddForm from './AddForm'
+import MenuNormal from './MenuNormal'
+import MenuMobile from './MenuMobile'
+import logo from '../images/linh-logo.png'
+import { useEffect, useState } from 'react'
 
-export default function Header({title, onAdd}){
+export default function Header(){
+	const [normalSize, setNormalSize] = useState(true)
+	useEffect(() => {
+		function handleResize(){
+		    let width = window.outerWidth
+		    if(width < 1000){
+		    	setNormalSize(false)
+		    } else {
+		    	setNormalSize(true)
+		    }
+		}
+		window.addEventListener("resize", handleResize)
+		handleResize()
+	})
+
 	return (
 		<div className="header">
-			<div className="left">
-				<h1>{title}</h1>
+			<div className="logo">
+				<a href="#">
+					<img src={logo} alt="my logo, back off"/>
+				</a>
 			</div>
-			<div className="center">
-				<div className="task-title">
-					<AddForm onAdd={onAdd}/>
-				</div>
-				<div className="task-button">
-				</div>
-			</div>
-			<div className="right"></div>
+			{ normalSize && <MenuNormal/>}
+			{ !normalSize && <MenuMobile/> }
 		</div>
 	)
-}
-
-Header.defaultProps = {
-	title: "This is not a title",
-	body: "This is not a body"
-}
-
-Header.propTypes = {
-	title: PropTypes.string.isRequired,
-	onAdd: PropTypes.func.isRequired
 }

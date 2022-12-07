@@ -1,44 +1,20 @@
 import Header from './components/Header'
-import Tasks from './components/Tasks'
-import { useState, useEffect } from 'react'
+import Body from './components/Body'
+import Form from './components/Form'
+import './App.css';
+import {useState} from 'react'
+import { useSelector } from 'react-redux'
 
-export default function App() {
-  const title = "Task tracker"
-  const onAdd = (e) => {
-    e.preventDefault()
-    console.log("on click")
-  }
-  const [tasks, setTasks] = useState([
-    {
-      id: 1,
-      name: "Doing laundry",
-      done: false
-    }, 
-    {
-      id: 2,
-      name: "Shopping",
-      done: false
-    }
-  ])
 
-  const onDelete = (id) => {
-    setTasks(tasks.filter(task => task.id !== id))
-  }
-
-  const toggleDone = (id) => {
-    let localTasks = [...tasks]
-    localTasks.forEach(task => {
-      if(task.id === id){
-        task.done = !task.done
-      }
-    })
-    setTasks(localTasks)
-  }
-
+function App() {
+  const displayForm = useSelector((state) => state.displayForm.value)
   return (
     <div className="App">
-      <Header title={title} onAdd={onAdd}/>
-      <Tasks tasks={tasks} onDelete={onDelete} toggleDone={toggleDone}/>
+      { displayForm && <Form /> }
+      <Header/>
+      <Body/>
     </div>
-  )
+  );
 }
+
+export default App;
