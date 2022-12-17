@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/static/css/main.e42efa91.css",
-    "main.js": "/static/js/main.6f49a2b3.js",
-    "static/js/787.3bc0b0f8.chunk.js": "/static/js/787.3bc0b0f8.chunk.js",
-    "static/media/avatar-2.jpeg": "/static/media/avatar-2.a197606203f0ccba92a9.jpeg",
-    "static/media/singtel.png": "/static/media/singtel.c930a27870335d035fb9.png",
-    "static/media/avatar.jpeg": "/static/media/avatar.0655d901dad9857e03e8.jpeg",
-    "static/media/ncs.png": "/static/media/ncs.60585546083598a9608e.png",
-    "static/media/fsoft.png": "/static/media/fsoft.8c2556e09a40514cf6b1.png",
-    "static/media/linh-logo.png": "/static/media/linh-logo.1b641f64d3d5f9483120.png",
-    "static/media/hero-devices.svg": "/static/media/hero-devices.09431a49b158b1905523f18d9abe3290.svg",
-    "static/media/console.png": "/static/media/console.48960ffaee895a6b5754.png",
-    "static/media/software-application.png": "/static/media/software-application.ac7aa6f5b29f08ee4ce8.png",
-    "index.html": "/index.html",
-    "main.e42efa91.css.map": "/static/css/main.e42efa91.css.map",
-    "main.6f49a2b3.js.map": "/static/js/main.6f49a2b3.js.map",
-    "787.3bc0b0f8.chunk.js.map": "/static/js/787.3bc0b0f8.chunk.js.map"
+    "main.css": "/personal_portfolio/static/css/main.e42efa91.css",
+    "main.js": "/personal_portfolio/static/js/main.31c0e023.js",
+    "static/js/787.3bc0b0f8.chunk.js": "/personal_portfolio/static/js/787.3bc0b0f8.chunk.js",
+    "static/media/avatar-2.jpeg": "/personal_portfolio/static/media/avatar-2.a197606203f0ccba92a9.jpeg",
+    "static/media/singtel.png": "/personal_portfolio/static/media/singtel.c930a27870335d035fb9.png",
+    "static/media/avatar.jpeg": "/personal_portfolio/static/media/avatar.0655d901dad9857e03e8.jpeg",
+    "static/media/ncs.png": "/personal_portfolio/static/media/ncs.60585546083598a9608e.png",
+    "static/media/fsoft.png": "/personal_portfolio/static/media/fsoft.8c2556e09a40514cf6b1.png",
+    "static/media/linh-logo.png": "/personal_portfolio/static/media/linh-logo.1b641f64d3d5f9483120.png",
+    "static/media/hero-devices.svg": "/personal_portfolio/static/media/hero-devices.09431a49b158b1905523f18d9abe3290.svg",
+    "static/media/console.png": "/personal_portfolio/static/media/console.48960ffaee895a6b5754.png",
+    "static/media/software-application.png": "/personal_portfolio/static/media/software-application.ac7aa6f5b29f08ee4ce8.png",
+    "index.html": "/personal_portfolio/index.html",
+    "main.e42efa91.css.map": "/personal_portfolio/static/css/main.e42efa91.css.map",
+    "main.31c0e023.js.map": "/personal_portfolio/static/js/main.31c0e023.js.map",
+    "787.3bc0b0f8.chunk.js.map": "/personal_portfolio/static/js/787.3bc0b0f8.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e42efa91.css",
-    "static/js/main.6f49a2b3.js"
+    "static/js/main.31c0e023.js"
   ]
 }
