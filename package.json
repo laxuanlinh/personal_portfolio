@@ -1,7 +1,7 @@
 {
   "name": "react-again",
   "version": "0.1.0",
-  "homepage": "http://laxuanlinh.github.io/personal_portfolio/",
+  "homepage": "https://laxuanlinh.github.io/personal_portfolio/",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.2.1",
